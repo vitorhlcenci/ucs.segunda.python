@@ -1,0 +1,7 @@
+valor=0
+valor2=0
+resposta=0
+valor=float(input("digite o primeoro valor da multiplicação\n"))
+valor2=float(input("agora o segundo\n"))
+resposta=valor*valor2
+print("o valor é %d" %resposta)
