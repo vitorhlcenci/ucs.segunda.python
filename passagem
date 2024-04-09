@@ -1,0 +1,5 @@
+ta = 0.50
+nome = input("informe seu nome:")
+dis = float(input("informe a distância:"))
+vp=ta*dis
+print("o valor à ser pago é:",vp)
