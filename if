@@ -1,0 +1,19 @@
+#aba 1 ba 2 pe 3 abax 3.5 ma 6
+fruta=int(input("qual fruta: abacate 1, banana 2, pera 3, abacaxi 4, maça 5"))
+quan=int(input("quantas frutas:"))
+if fruta==1:
+    fruta=1
+elif fruta==2:
+    fruta=2
+elif fruta==3:
+    fruta=3
+elif fruta==4:
+    fruta=3.5
+elif fruta==5:
+    fruta=6
+else:
+    print("fruta nao esta a venda")
+    
+ 
+total=fruta*quan
+print("o valor a ser pago é:",total)
