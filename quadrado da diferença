@@ -1,0 +1,4 @@
+a=int(input("digite o primeiro valor"))
+b=int(input("digite o seguno valor"))
+c=(a-b)**2
+print("o valor é:",c)
