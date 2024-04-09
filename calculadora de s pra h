@@ -1,0 +1,7 @@
+#escre um programa que receba quantidades de segundos e e tranforme em minutis e em horas v
+segundos=int(input("escreva quantos segundos\n"))
+horas=segundos//3600
+resto=segundos%3600
+minutos=resto//60
+resto2=resto%60
+print("sao",horas,",",minutos,"minutos e",resto2, "segundos") 
