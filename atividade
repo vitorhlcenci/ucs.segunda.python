@@ -1,0 +1,12 @@
+valor=int(input("digite um valor\n"))
+valor2=int(input("digite outro valor\n"))
+
+if valor > valor2:
+    print("o maior valor é",valor)
+
+elif valor2 > valor :
+    print("o maior valoe é",valor2)
+
+else:
+    print (" os dois sao iguais")
+
