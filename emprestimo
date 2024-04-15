@@ -1,0 +1,9 @@
+casa=int(input("valor da casa\n"))
+salario=int(input("digite o salário\n"))
+anos=int(input("em quantos anos parcelar\n"))
+
+if casa/anos/12 > salario*0.3:
+    print("emprestimo negado")
+
+elif casa/anos/12 < salario*0.3:
+        print("emprstimo aceito")
