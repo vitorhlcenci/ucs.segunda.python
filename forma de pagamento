@@ -1,0 +1,15 @@
+valor=float(input("qual o valor da sua compra\n"))
+forma=int(input("qual a forma de pagamento:\n1 a vista em dinheiro/boleto: 10%\n2 a vita cartão: 5%\n3 parcela de ate 2x: valor normal\n4 parcela mais de 3x: com 10% de juros\n"))
+if forma<0:
+    print("codigo invalido")
+if forma>3:
+    print("codigo invalido")
+if forma==1:
+    valor=valor*0.9
+if forma==2:
+    valor=valor*0.95
+if forma==3:
+    valor=valor
+if forma==4:
+    valor=valor*1.1
+print("o valor a ser pago é:",valor)
