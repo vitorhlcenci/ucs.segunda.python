@@ -1,17 +1,11 @@
-data=int(input("digite sua data de nascimento"))
-idade=int(input("digite sua iadade"))
+anon=int(input("digite sua data de nascimento\n"))
+anoa=int(input("digite o ano atual\n"))
 
-dia=idade-18
-if dia<0:
-    dia=dia*-1
-else:
-    dia=dia
+dia=anoa-anon
+
 if dia==0:
     print("esta no ano para vc se alistar")
-elif dia>18:
-    print("ja deveria ter alistado a",dia,"anos")
-elif dia<18:
-    print("ainda nao deu a data para se alistar faltam",dia,"anos")
-elif dia<0:
-    print("vc nem nasceu")
-
+if dia>18:
+    print("ja deveria ter alistado a",dia-18,"anos")
+if dia<18:
+     print("ainda nao deu a data para se alistar faltam",18-dia,"anos")
