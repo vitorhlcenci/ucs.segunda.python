@@ -1,0 +1,14 @@
+idade=int(input("qual a sua idade\n"))
+if idade>=6 and idade<=9:
+    print("voce esta no mirim")
+if idade>9 and idade<=14:
+    print("voce esta no infantil")
+if idade>14 and idade<=19:
+    print("voce esta no junior")
+if idade==20:
+    print("voce esta no sênior")
+if idade>20:
+    print("voce esta no master")
+    #and
+    #or
+    
