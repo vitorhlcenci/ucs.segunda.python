@@ -1,9 +1,16 @@
 casa=int(input("valor da casa\n"))
 salario=int(input("digite o salário\n"))
-anos=int(input("em quantos anos parcelar\n"))
+anos=float(input("em quantos anos parcelar\n"))
 
 if casa/anos/12 > salario*0.3:
     print("emprestimo negado")
 
-elif casa/anos/12 < salario*0.3:
+elif casa/anos/12 <= salario*0.3:
         print("emprstimo aceito")
+teste=casa/anos/12
+print("parcelas de :",teste,"por mes")
+salario2=salario*0.3
+print("o maximo a ser pago por mês é",salario2)
+if salario2<teste:
+    teste2=anos*12*salario2
+    print("o maior emprestimo a ser feitpo é:",teste2)
