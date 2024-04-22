@@ -1,25 +1,20 @@
 tarifakm=0.50
 nome = input("Informe seu nome:")
 idade = int(input("Qual a sua idade:"))
-print("Você recebeu 30% de desconto")
 distancia = float(input("Informe distância:"))
 classe = int(input("1= econômica 2= executiva 3= classe A:"))
 if classe <= 0:
-print("Inválido")
-if classe > 3:
-printf("Inválido")
+    print("Inválido")
+elif classe > 3:
+    printf("Inválido")
+if idade>65:
+    distancia=distancia*0.7
 if classe == 1:
-preco = tarifakm * distancia
-if idade > 65:
-preco = preco * 0.70
-print("O valor de passagem é:", preco)
-if classe == 2:
-preco = (tarifakm * distanciapreco) * 1.5
-if idade > 65:
-preco = preco * 0.70
-print("O valor de passagem é:", preco)
-if classe == 3:
-preco = (tarifakm * distancia) * 2
-if idade > 65:
-preco = preco * 0.70
-print("O valor de passagem é:", preco)
+    preco = tarifakm * distancia
+    print("O valor de passagem é:", preco)
+elif classe == 2:
+    preco = (tarifakm * distancia) * 1.5
+    print("O valor de passagem é:", preco)
+elif classe == 3:
+    preco = (tarifakm * distancia) * 2
+    print("O valor de passagem é:", preco)
