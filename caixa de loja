@@ -1,0 +1,20 @@
+codigo=int(input("insira o codigo do pruto a ser comprado(valor unitario):\ncodigo\n15=1000\n16=2000\n17=1200\n20=500\n"))
+quantidade=int(input("quanto do produto deseja comprar?\n"))
+           
+if codigo>17 and codigo!=20:
+    print("codigo negado")
+if codigo<15 and codigo!=20:
+    print("codigo negado")
+elif codigo==15:
+    total=quantidade*1000
+    print("o valor a ser pago é",total)
+elif codigo==16:
+    total=quantidade*2000
+    print("o valor a ser pago é",total)
+elif codigo==17:
+    total=quantidade*1200
+    print("o valor a ser pago é",total)
+elif codigo==20:
+    total=quantidade*500
+    print("o valor a ser pago é",total)
+
