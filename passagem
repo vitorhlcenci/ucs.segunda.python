@@ -3,18 +3,19 @@ nome = input("Informe seu nome:")
 idade = int(input("Qual a sua idade:"))
 distancia = float(input("Informe distância:"))
 classe = int(input("1= econômica 2= executiva 3= classe A:"))
-if classe <= 0:
+if classe <= 0 or classe>3:
     print("Inválido")
-elif classe > 3:
-    printf("Inválido")
-if idade>65:
-    distancia=distancia*0.7
-if classe == 1:
-    preco = tarifakm * distancia
-    print("O valor de passagem é:", preco)
-elif classe == 2:
-    preco = (tarifakm * distancia) * 1.5
-    print("O valor de passagem é:", preco)
-elif classe == 3:
-    preco = (tarifakm * distancia) * 2
-    print("O valor de passagem é:", preco)
+else:
+    if idade>65:
+        distancia=distancia*0.7
+    else :
+        distancia=distancia*1
+    if classe == 1:
+        preco = tarifakm * distancia
+        print("O valor de passagem é:", preco)
+    elif classe == 2:
+        preco = (tarifakm * distancia) * 1.5
+        print("O valor de passagem é:", preco)
+    elif classe == 3:
+        preco = (tarifakm * distancia) * 2
+        print("O valor de passagem é:", preco)
