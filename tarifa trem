@@ -1,21 +1,33 @@
 tarifakm=0.50
-nome = input("Informe seu nome:")
-idade = int(input("Qual a sua idade:"))
-distancia = float(input("Informe distância:"))
-classe = int(input("1= econômica 2= executiva 3= classe A:"))
-if classe <= 0 or classe>3:
-    print("Inválido")
-else:
-    if idade>65:
-        distancia=distancia*0.7
-    else :
-        distancia=distancia*1
-    if classe == 1:
-        preco = tarifakm * distancia
-        print("O valor de passagem é:", preco)
-    elif classe == 2:
-        preco = (tarifakm * distancia) * 1.5
-        print("O valor de passagem é:", preco)
-    elif classe == 3:
-        preco = (tarifakm * distancia) * 2
-        print("O valor de passagem é:", preco)
+precom=0
+precomn=0
+vezes=int(input("quantas passagens deseja comprar?"))
+for numero in range(0,vezes,+1):
+    nome = input("Informe seu nome:")
+    idade = int(input("Qual a sua idade:"))
+    distancia = float(input("Informe distância:"))
+    classe = int(input("1= econômica 2= executiva 3= classe A:"))
+    if classe <= 0 or classe>3:
+        print("Inválido")
+    else:
+        if idade>65:
+            distancia=distancia*0.7
+        else :
+            distancia=distancia*1
+        if classe == 1:
+            preco = tarifakm * distancia
+            print("O valor de passagem é:", preco)
+        elif classe == 2:
+            preco = (tarifakm * distancia) * 1.5
+            print("O valor de passagem é:", preco)
+        elif classe == 3:
+            preco = (tarifakm * distancia) * 2
+            print("O valor de passagem é:", preco)
+        if preco>precom:
+            precom=preco
+        if preco<precom:
+            precomn=preco
+print("o menor e o maior preco são:",precomn,precom)
+        
+        
+        
