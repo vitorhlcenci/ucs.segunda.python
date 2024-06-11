@@ -1,0 +1,14 @@
+arqucs=open("notas do alemão.csv")
+temlinhas = True
+while temlinhas == True:
+    linha = arqucs.readline()
+    if not linha:
+        print("Arquivo lido completamente")
+        temlinhas =False
+    else:
+        nome,n1,n2,n3=linha.split(";")
+        r=(float(n1)+float(n2)+float(n3))/3
+        print("o aluno",nome,"tirou",n1,",",n2,"e",n3,"e sua média é:",r)
+arqucs.close()
+                
+
