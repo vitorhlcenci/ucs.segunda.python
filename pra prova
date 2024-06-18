@@ -1,0 +1,65 @@
+opcao=0
+while opcao!=4:
+    print("opções do menu")
+    print("1. cadastrar aluno no csv")
+    print("2. ler alunos cadstrados no csv")
+    print("3. ler alunos parovados no arquivo csv")
+    print("4. acabar programa")
+    opcao=int(input("informe a opcao desejada:\n"))
+    
+    if opcao==1:
+        #codigo do program a q grava arq
+        print("vamos cadastrar alunos")
+        nome=''
+        r=''
+        arqex="notas do alemão.csv"
+        while nome!="fim":
+            nome=input("informe o seu nome ou 'fim' para sair:")
+            if  nome!="fim":
+                n1=float(input("informe a nota 1:"))
+                if n1>10 or n1<0:
+                    print("invalido")
+                    break
+                n2=float(input("informe a nota 2:"))
+                if n2>10 or n2<0:
+                    print("invalido")
+                    break
+                n3=float(input("informe a nota 3:"))
+                if n3>10 or n3<0:
+                    print("invalido")
+                    break
+        #         r=4/((1/n1)+(1/n2)+(2/n3))
+                with open(arqex,"a") as arqnotas:
+                    arqnotas.write(nome +";"+ str(n1)+";"+str(n2)+";"+str(n3)+"\n") #";"+str(r)+
+    elif opcao==2:
+        print("vamos ler alunos")
+        arqex="notas do alemão.csv"
+        with open(arqex,"r") as arq: 
+            temlinhas = True
+            while temlinhas == True:
+                linha = arqucs.readline()
+                if not linha:
+                    print("Arquivo lido completamente")
+                    temlinhas =False
+                else:
+                    nome,n1,n2,n3=linha.split(";")
+                    r=(float(n1)*3+float(n2)*3+float(n3)*4)/10
+                    #(float(n1)+float(n2)+float(n3))/3
+                    
+                    print("o aluno",nome,"tirou",n1,",",n2,"e",n3,"e sua média é:",r)
+        arqucs.close()
+    elif opcao==3:
+        print("vamos ler alunos aprovados")
+        # codigo fdo programa que le alunos aprovados
+        nomearqexterno = "notas do alemão.csv"
+        temalunos = True
+        with open(nomearqexterno,"r") as arq: 
+            #leitura arquivo
+            temlinhas=True
+            while temlinhas:
+                linha=arq.readline()
+                if not linha:
+                    temlinhas=False
+    elif opcao<1 or opcao>4:
+        print("opção inválida\n")
+    
